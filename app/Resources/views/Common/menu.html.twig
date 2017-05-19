@@ -1,0 +1,64 @@
+{# src/Savills/AppelOffreBundle/Resources/views/Common/menu.html.twig #}
+
+<div class="page-sidebar navbar-collapse collapse">
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200" style="padding-top: 20px">
+            <li class="sidebar-toggler-wrapper hide">
+                <div class="sidebar-toggler"></div>
+
+            <li {% if app.request.get('_route')== 'code_option.read' or app.request.get('_route')== 'code_option.edit' or app.request.get('_route')== 'code_option.create' %}class="active" {% endif %}>
+                <a class="nav-link nav-toggle" href=" {{ path('code_option.read') }}">
+                    <i class="icon-settings"></i>
+                    <span class="title">Code option</span>
+                </a>
+            </li>
+            <li {% if app.request.get('_route')== 'black_list.read' or app.request.get('_route')== 'black_list.edit' or app.request.get('_route')== 'black_liste.create' %}class="active" {% endif %}>
+                <a class="nav-link nav-toggle" href="{{ path('black_list.read') }}">
+                    <i class="icon-settings"></i>
+                    <span class="title">Blacklist</span>
+                </a>
+            </li>
+            <li {% if app.request.get('_route')== 'exclusion.read' or app.request.get('_route')== 'exclusion.edit' or app.request.get('_route')== 'exclusion.create' %}class="active" {% endif %}>
+                <a href="{{ path('exclusion.read') }}">
+                    <i class="icon-settings"></i>
+                    <span class="title">Exclusion</span>
+                </a>
+            </li>
+            <li {% if app.request.get('_route')== 'inclusion.read' or app.request.get('_route')== 'inclusion.edit' or app.request.get('_route')== 'inclusion.create' %}class="active" {% endif %}>
+                <a href="{{ path('inclusion.read') }}">
+                    <i class="icon-settings"></i>
+                    <span class="title">Inclusion</span>
+                </a>
+            </li>
+            <li {% if app.request.get('_route')== 'model.read' or app.request.get('_route')== 'model.edit' or app.request.get('_route')== 'model.create' %}class="active" {% endif %}>
+                <a href="{{ path('model.read') }}">
+                    <i class="icon-settings"></i>
+                    <span class="title">Modèle</span>
+                </a>
+            </li>
+            <li {% if app.request.get('_route')== 'query.read' %} class="active" {% endif %}>
+                <a href="{{ path('query.read') }}">
+                    <i class="icon-list"></i>
+                    <span class="title">Query</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-cloud-download"></i>
+                    <span class="title">Exports</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="{{ path('code_option.export') }}">Code Option</a></li>
+                    <li><a href="{{ path('black_list.export') }}">Blacklist</a></li>
+                    <li><a href="{{ path('exlusion.export') }}">Exclusion</a></li>
+                    <li><a href="{{ path('inclusion.export') }}">Inclusion</a></li>
+                    <li><a href="{{ path('model.export') }}">Model</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+    {% endif %}
+</div>

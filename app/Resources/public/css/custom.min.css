@@ -1,0 +1,118 @@
+.page-sidebar .page-sidebar-menu .sub-menu>li.active.active_open>a{
+    background: none !important;
+}
+.page-sidebar .page-sidebar-menu .sub-menu>li.active.active_open>a:hover,
+.page-sidebar .page-sidebar-menu .sub-menu>li.active.active_open.active_open_underline>a{
+    background: #3e4b5c !important;
+}
+/*** Surcharge -> Fiche prestation et actifs dans prestataires/interlocuteurs ***/
+.col-md-4 {
+    width: 50%;
+}
+
+@media(min-width: 992px) {
+    .col-md-3 {
+        width: 175px;
+    }
+}
+
+/*** Message d'erreur formualaire ***/
+.label-error {
+    margin-top: 15px;
+    clear: both;
+    color: orangered;
+}
+
+.message-error {
+    width: 47%;
+    margin: 15px 1.5%;
+    padding:8px 12px;
+    color: orangered;
+}
+
+/*** Front-end dans formulaire ***/
+.form-control-height-auto {
+    box-shadow: none !important;
+    width: 100%;
+    height: auto;
+    min-height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #c2cad8;
+    font-size: 14px;
+}
+
+.form-group-affichage {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+}
+
+.savills_user_backend_profile_edit .form-group .form-group {
+    display: none;
+}
+
+/*** Libellé caché lors de l'ajout de fichier ***/
+#addCollectionHere .child .form-group + .form-group {
+    display: none;
+}
+
+/*** Menu ***/
+.page-sidebar-wrapper {
+    position: relative;
+    z-index: 5;
+}
+
+/*** Form-group ***/
+.form-group, .form-control {
+    clear: both;
+}
+
+/*** Fancybox (caché utilisateur pour admin) ***/
+#appel_offre_fancybox_form_type_fancybox_users .radio-inline {
+    display: none;
+}
+#appel_offre_fancybox_form_type_fancybox_users .radio-inline + .radio-inline {
+     display: inline-block;
+ }
+
+/*** Astérix password création d'utilisateur ***/
+.red_asterisk {
+    color: orangered;
+    font-size: 12px;
+}
+
+/*** Table tracking ***/
+
+#tracking .date {
+    min-width: 92px;
+}
+#tracking .acteur {
+    min-width: 170px;
+}
+#tracking tbody {
+    word-break: break-all;
+}
+
+/*** Documentation ***/ /*
+#modal-outer {
+    height: 600px;
+    width: 50%;
+    position: relative;
+    margin-top: 0 !important;
+}
+#modal-outer #modal {
+    height: 100%;
+    margin 46px auto !important;
+    display: block;
+    position: relative;
+}
+#modal-outer #modal iframe {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+} */
+
+/*** Bouton enregistrer ***/
+button[save='save'] {
+    margin-right: 10px;
+}

@@ -1,0 +1,169 @@
+.form-horizontal .form-group
+{
+	margin-right: 0px !important;
+	margin-left : 0px !important;
+}
+
+div.checker, div.radio
+{
+	margin-right: 0 !important;
+	margin-left: 12px !important;
+}
+
+.checker
+{
+	margin-top: 10px!important;
+}
+
+.ui-multiselect
+{
+	width: 100% !important;
+	height: 34px !important;
+	background: white !important;
+}
+
+.ui-multiselect-menu .ui-widget .ui-widget-content .ui-corner-all .ui-state-active
+{
+	width: 34% !important;
+}
+
+#search_bundle_form .form-group
+{
+	float: left;
+	margin-right: -15px;
+	margin-left: -182px;
+	clear:none
+}
+
+#search_bundle_form .form-group .form-control
+{
+	clear: none;
+	width: 190px;
+	margin-right: 25px;
+}
+
+#search_bundle_form input[type='submit']
+{
+	clear: none;
+	width: 160px;
+	margin-right: 25px;
+}
+
+#search_bundle_form .form-group:last-child
+{
+	margin-left: -50px;
+
+}
+
+form input[type='file']
+{
+	border: none;
+}
+.search-input
+{
+	width:100% !important;
+}
+
+.select-all
+{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.deselect-all
+{
+	width: 100%;
+	margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+	.styledrop {
+		width: 50% !important;
+	}
+}
+
+.action-media
+{
+	text-align: left;
+}
+
+
+.alert-warning
+{
+	background-color: #e0efd8 !important;
+	border-color:  #e0efd8 !important;
+	color: #3b763e !important;
+}
+
+.dismiss-error
+{
+	background-color: #f2dedf !important;
+	border-color: #f2dedf !important;
+	color: #aa4344 !important;
+}
+
+.imgoffrefiche
+{
+	margin-left: 35%;
+}
+
+.photo
+{
+	margin-left: 129px !important;
+}
+
+
+@media (min-width: 992px) {
+	.resetpwd {
+		margin-left: 17.5% !important;
+	}
+}
+
+.label-error
+{
+	color: #aa4344 !important;
+}
+
+.message-error
+{
+	color: #aa4344 !important;
+}
+
+.page-sidebar-wrapper .page-sidebar.navbar-collapse
+{
+	position: relative !important;
+}
+
+.page-404 .number {
+	display: inline-block;
+	color: #ec8c8c;
+	text-align: right;
+}
+
+.page-404 .number, .page-500 .number {
+	letter-spacing: -10px;
+	line-height: 128px;
+	font-size: 128px;
+	font-weight: 300;
+}
+
+.page-404 .details {
+	padding-top: 0;
+	text-align: left;
+}
+.page-404 .details, .page-500 .details {
+	margin-left: 40px;
+	display: inline-block;
+}
+
+.page-404, .page-500 {
+	text-align: center;
+}
+.page-500 .number {
+	display: inline-block;
+	color: #ec8c8c;
+	text-align: right;
+}
+.page-500 .details {
+	text-align: left;
+}
